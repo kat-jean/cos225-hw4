@@ -26,4 +26,16 @@ public class PatientManager{
         }
     }
 
+    public String toString() {
+        if (patients.isEmpty()) {
+            return "Empty";
+        }
+        
+        String result = "";
+        for (Patient p : patients) {
+            result += (int)p.idNum + " " + (int)p.caffeineLevel + "\n";
+        }
+        return result.trim();
+    }
+    
 }

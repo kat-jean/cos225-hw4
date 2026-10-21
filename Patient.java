@@ -1,10 +1,11 @@
 public class Patient{
 
-    public double idNum;
+    public int idNum;
     public double caffeineLevel;
 
-    public Patient(double idNum, double caffeineLevel){
-        idNum = 0000;
-        caffeineLevel = 0;
+    public Patient(int idNum, double caffeineLevel){
+        this.idNum = idNum;
+        this.caffeineLevel = caffeineLevel;
     }
+
 }

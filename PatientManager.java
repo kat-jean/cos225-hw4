@@ -35,7 +35,7 @@ public class PatientManager{
         for (Patient p : patients) {
             result += (int)p.idNum + " " + (int)p.caffeineLevel + "\n";
         }
-        return result.trim();
+        return result.trim(); // need to look at this toString more.
     }
-    
+
 }

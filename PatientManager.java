@@ -32,10 +32,14 @@ public class PatientManager{
         }
         
         String result = "";
-        for (Patient p : patients) {
-            result += (int)p.idNum + " " + (int)p.caffeineLevel + "\n";
+        for (int i = 0; i < patients.size(); i++) {
+            Patient p = patients.get(i);
+            if (i > 0) {
+                result += "\n";
+            }
+            result += p.idNum + " " + p.caffeineLevel;
         }
-        return result.trim(); // need to look at this toString more.
+        return result; 
     }
 
 }

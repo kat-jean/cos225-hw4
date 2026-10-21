@@ -37,7 +37,7 @@ public class PatientManager{
             if (i > 0) {
                 result += "\n";
             }
-            result += p.idNum + " " + p.caffeineLevel;
+            result += p.idNum + " " + (int)p.caffeineLevel; // looked (int) up to change double to int format
         }
         return result; 
     }
